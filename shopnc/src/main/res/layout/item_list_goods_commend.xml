@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Wrap"
+    android:layout_margin="0dip"
+    android:padding="8dip">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.Goods"
+        android:layout_height="88dip" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.Name"
+        android:paddingTop="4dip"
+        android:paddingBottom="4dip"
+        android:textSize="12sp" />
+
+    <View
+        style="@style/View.Line"
+        android:layout_below="@+id/nameTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/moneyTextView"
+        style="@style/TextView.Money"
+        android:layout_marginTop="4dip"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip"
+        android:textSize="12sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

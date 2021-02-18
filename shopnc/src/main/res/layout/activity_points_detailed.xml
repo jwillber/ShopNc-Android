@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        style="@style/Toolbar.Main">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            style="@style/TextView.Title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View style="@style/View.Line" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainScrollView"
+        style="@style/Layout.Main"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/contentLinearLayout"
+            style="@style/Layout.Main">
+
+            <RelativeLayout style="@style/Layout.Tool">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextView.ToolTitle"
+                    android:drawableStart="@mipmap/ic_mine_order"
+                    android:drawableLeft="@mipmap/ic_mine_order"
+                    android:text="交易状态"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/stateTextView"
+                    style="@style/TextView.ToolValue"
+                    android:text="待收货"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addressRelativeLayout"
+                style="@style/Layout.Tool"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dip"
+                android:paddingTop="12dip"
+                android:paddingBottom="12dip">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/addressNameTextView"
+                    style="@style/TextView.Max"
+                    android:drawableStart="@mipmap/ic_mine_address"
+                    android:drawableLeft="@mipmap/ic_mine_address"
+                    android:textColor="@color/blackSub"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/addressMobileTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_alignTop="@+id/addressNameTextView"
+                    android:layout_alignBottom="@+id/addressNameTextView"
+                    android:layout_toEndOf="@+id/addressNameTextView"
+                    android:layout_toRightOf="@+id/addressNameTextView"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/addressAreaTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_below="@+id/addressNameTextView"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="30dip" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/messageRelativeLayout"
+                style="@style/Layout.Tool"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:paddingTop="12dip"
+                android:paddingBottom="12dip">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/messageNameTextView"
+                    style="@style/TextView.Max"
+                    android:drawableStart="@mipmap/ic_mine_setting"
+                    android:drawableLeft="@mipmap/ic_mine_setting"
+                    android:text="订单留言"
+                    android:textColor="@color/blackSub"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/messageContentTextView"
+                    style="@style/TextView.Normal"
+                    android:layout_below="@+id/messageNameTextView"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="30dip" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextView.ToolTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="16dip"
+                android:background="@color/white"
+                android:drawableStart="@mipmap/ic_store_goods"
+                android:drawableLeft="@mipmap/ic_store_goods"
+                android:drawablePadding="8dip"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                android:text="商品信息"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/View.Line" />
+
+            <RelativeLayout
+                android:id="@+id/goodsRelativeLayout"
+                style="@style/Layout.Item">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/mainImageView"
+                    style="@style/ImageView.GoodsVer"
+                    android:layout_width="56dip"
+                    android:layout_height="56dip"
+                    android:layout_marginEnd="8dip"
+                    android:layout_marginRight="8dip" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameTextView"
+                    style="@style/TextView.Name"
+                    android:layout_toEndOf="@+id/mainImageView"
+                    android:layout_toRightOf="@+id/mainImageView"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/pointsTextView"
+                    style="@style/TextView.Money"
+                    android:layout_alignBottom="@+id/mainImageView"
+                    android:layout_marginEnd="4dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_toEndOf="@+id/mainImageView"
+                    android:layout_toRightOf="@+id/mainImageView"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/numberTextView"
+                    style="@style/TextView.Small"
+                    android:layout_alignBottom="@+id/mainImageView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/Layout.Item"
+                android:layout_marginTop="16dip"
+                android:layout_marginBottom="16dip"
+                android:paddingTop="12dip"
+                android:paddingBottom="12dip">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/snTextView"
+                    style="@style/TextView.Small" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/createTimeTextView"
+                    style="@style/TextView.Small"
+                    android:layout_marginTop="4dip" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

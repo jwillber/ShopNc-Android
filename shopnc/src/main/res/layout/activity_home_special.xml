@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        style="@style/Toolbar.Main">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            style="@style/TextView.Title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/toolbarImageView"
+            style="@style/ImageView.Toolbar"
+            android:layout_gravity="end" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View style="@style/View.Line" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/mainSwipeRefreshLayout"
+        style="@style/Layout.Main">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mainScrollView"
+            style="@style/Layout.Main">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/contentLinearLayout"
+                style="@style/Layout.Main">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/mainBanner"
+                    style="@style/Layout.Wrap"
+                    android:layout_height="200dip" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mainRecyclerView"
+                    style="@style/Layout.Main" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

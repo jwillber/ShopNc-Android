@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Goods">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainImageView"
+        style="@style/ImageView.Goods" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameTextView"
+        style="@style/TextView.Name"
+        android:paddingTop="4dip"
+        android:paddingBottom="4dip"
+        android:textSize="12sp" />
+
+    <View style="@style/View.Line" />
+
+    <RelativeLayout style="@style/Layout.Wrap">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/moneyTextView"
+            style="@style/TextView.Money"
+            android:layout_marginTop="4dip"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/deleteImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/moneyTextView"
+            android:layout_alignBottom="@+id/moneyTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete_item" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

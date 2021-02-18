@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        style="@style/Toolbar.Main">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            style="@style/TextView.Title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View style="@style/View.Line" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contentTextView"
+        style="@style/TextView.Area"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dip" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

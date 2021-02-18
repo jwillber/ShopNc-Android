@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    style="@style/Layout.Wrap"
+    android:layout_marginBottom="4dip"
+    android:paddingStart="0dip"
+    android:paddingLeft="0dip"
+    android:paddingEnd="4dip"
+    android:paddingRight="4dip">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainTextView"
+        style="@style/TextView.Spec"
+        android:layout_width="match_parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
